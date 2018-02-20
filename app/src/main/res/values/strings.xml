@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyOwnCard</string>
+
+    <!--background image-->
+    <string name="image_background">Nuvole e montagne</string>
+
+    <!--logo image-->
+    <string name="image_logo">MeteoForum</string>
+
+    <!--descriptive image-->
+    <string name="image_description">Il forum di chi ama la meteo</string>
+
+    <!--CML logo image-->
+    <string name="cml_image_logo">Centro Meteo Lombardo</string>
+
+    <!--CML descriptive string-->
+    <string name="cml_description">A cura del Centro Meteo Lombardo</string>
+
+    <!--CML site hyperlink-->
+    <string name="hyperlink">http://centrometeolombardo.com</string>
+</resources>

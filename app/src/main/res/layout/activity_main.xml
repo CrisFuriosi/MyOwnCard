@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myowncard.MainActivity">
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_description"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/img_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/description" />
+
+    <ImageView
+        android:id="@+id/cml_image_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:contentDescription="@string/cml_image_logo"
+        android:src="@drawable/logo_cml" />
+
+    <TextView
+        style="@style/lightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cml_hyperlink"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_toEndOf="@id/cml_image_logo"
+        android:layout_toRightOf="@id/cml_image_logo"
+        android:text="@string/cml_description" />
+
+    <TextView
+        android:id="@+id/cml_hyperlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_toEndOf="@id/cml_image_logo"
+        android:layout_toRightOf="@id/cml_image_logo"
+        android:autoLink="web"
+        android:text="@string/hyperlink" />
+
+</RelativeLayout>
